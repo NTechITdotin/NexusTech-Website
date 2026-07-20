@@ -40,7 +40,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(11, 16, 32, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     z-index: 999;
     opacity: 0;
@@ -347,5 +347,12 @@
   .why-card:hover,
   .insight-card:hover {
     transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .span-2, .span-row-2 {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
